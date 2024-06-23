@@ -78,5 +78,19 @@ $route['reservation/index'] = 'reservation/index';
 $route['reservation/add'] = 'reservation/add';
 $route['reservation/edit/(:num)'] = 'reservation/edit/$1';
 $route['reservation/delete/(:num)'] = 'reservation/delete/$1';
+   
+$route['default_controller'] = 'frontend/page/index';
+
+$route['frontend'] = 'frontend/page/index';
 
 
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+/********************************************************** */
+$route['index'] = 'frontend/page/index';
+$route['contact'] = 'frontend/page/contact';
+$route['login'] = 'frontend/page/espace_client';
+$route['reservation'] = 'frontend/page/reservation';
+$route['taxi'] = 'frontend/page/listing';
+$route['agence'] = 'frontend/page/agence';
+$route['propos'] = 'frontend/page/about;
