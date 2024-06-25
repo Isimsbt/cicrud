@@ -7,7 +7,7 @@
                 <h5 class="card-title text-center">Supprimer une location</h5>
                 <form method="post" action="<?= base_url('location/delete/' . $ID_location) ?>">
                     <p>Êtes-vous sûr de vouloir supprimer cette location ?</p>
-                    <p>ID Taxi : <?= $location->matricule ?></p>
+                    <p>matricule : <?= $location->matricule ?></p>
                     <p>ID Client : <?= $location->ID_client ?></p>
                     <p>ID Agence : <?= $location->ID_agence ?></p>
                     <p>Date début : <?= $location->date_debut ?></p>

@@ -95,7 +95,7 @@
               <img src="images/log.png" alt="Sample image" class="custom-size">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-              <form id="signupForm" class="needs-validation" novalidate>
+						<form id="signupForm" class="needs-validation" novalidate action="register.php" method="post">
                 <div class="row">
                     <div class="container">
                         <div class="row">
@@ -207,6 +207,8 @@
       
                 <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Sign Up</button>
               </form>
+
+
               <script>
                 document.getElementById('signupForm').addEventListener('submit', function(event) {
                   var inputs = document.querySelectorAll('#signupForm input');

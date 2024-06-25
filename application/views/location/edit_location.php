@@ -1,36 +1,63 @@
 <?php $this->load->view('includes/header'); ?>
-
-<div class="container">
-    <div class="row">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title text-center">Modifier une location</h5>
-                <form method="post" action="<?= base_url('location/edit/' . $ID_location) ?>">
-                    <div class="mb-3">
-                        <label for="matricule" class="form-label">matricule</label>
-                        <input type="text" name="matricule" value="<?= $location->matricule ?>" class="form-control" id="matricule">
-                    </div>
-                    <div class="mb-3">
-                        <label for="ID_client" class="form-label">ID Client</label>
-                        <input type="text" name="ID_client" value="<?= $location->ID_client ?>" class="form-control" id="ID_client">
-                    </div>
-                    <div class="mb-3">
-                        <label for="ID_agence" class="form-label">ID Agence</label>
-                        <input type="text" name="ID_agence" value="<?= $location->ID_agence ?>" class="form-control" id="ID_agence">
-                    </div>
-                    <div class="mb-3">
-                        <label for="date_debut" class="form-label">Date début</label>
-                        <input type="text" name="date_debut" value="<?= $location->date_debut ?>" class="form-control" id="date_debut">
-                    </div>
-                    <div class="mb-3">
-                        <label for="date_fin" class="form-label">Date fin</label>
-                        <input type="text" name="date_fin" value="<?= $location->date_fin ?>" class="form-control" id="date_fin">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Modifier</button>
-                </form>
+    <div class="container">
+        <h2>Modifier une location</h2>
+        <form id="updateForm" action="<?= base_url('location/edit/' . $id) ?>" method="post">
+            <div class="form-group">
+                <label for="matricule">matricule</label>
+                <input type="text" class="form-control" name="matricule" value="<?= $location['matricule'] ?>" required>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="ID_client">ID Client</label>
+                <input type="text" class="form-control" name="ID_client" value="<?= $location['ID_client'] ?>" required>
+            </div>
+            <div class="form-group">
+                <label for="ID_agence">ID Agence</label>
+                <input type="text" class="form-control" name="ID_agence" value="<?= $location['ID_agence'] ?>" required>
+            </div>
+            <div class="form-group">
+                <label for="date_debut">Date début</label>
+                <input type="date" class="form-control" name="date_debut" value="<?= $location['date_debut'] ?>" required>
+            </div>
+            <div class="form-group">
+                <label for="date_fin">Date fin</label>
+                <input type="date" class="form-control" name="date_fin" value="<?= $location['date_fin'] ?>" required>
+            </div>
+            <button type="button" id="updateButton" class="btn btn-sm btn-primary">Mettre à jour</button>
+        </form>
     </div>
-</div>
+
+<script>
+document.getElementById('updateButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default button behavior
+
+    var form = document.getElementById('updateForm');
+
+    // Create an AJAX request
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', form.action, true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    // Collect form data
+    var formData = new FormData(form);
+    var data = new URLSearchParams();
+    for (var pair of formData) {
+        data.append(pair[0], pair[1]);
+    }
+
+    // Handle response
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            // Redirect to the index page
+            window.location.href = "<?= base_url('location/index') ?>";
+        } else {
+            // Handle error (optional)
+            console.error('Update failed:', xhr.responseText);
+        }
+    };
+
+    // Send request
+    xhr.send(data);
+});
+</script>
 
 <?php $this->load->view('includes/footer'); ?>

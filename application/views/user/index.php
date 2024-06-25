@@ -11,37 +11,38 @@
                             <th>ID_Client</th>
                             <th>Nom</th>
                             <th>Email</th>
-                            <th>telephone</th>
+                            <th>Téléphone</th>
                             <th>Adresse</th>
                             <th>Nationalité</th>
+                            <th>Genre</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if (isset($users) && !empty($users)): ?>
+                        <?php if (!empty($users)): ?>
                             <?php foreach ($users as $row): ?>
                                 <tr>
-                                    <td><?= $row['ID_client'] ?></td>
-                                    <td><?=$row['Nom_client'] ?></td>
-                                    <td><?= $row['email'] ?></td>
-                                    <td><?=$row ['telephone'] ?></td>
-                                    <td><?= $row['adresse'] ?></td>
-                                    <td><?= $row['nationalite']?></td>
+                                    <td><?= $row->ID_client ?></td>
+                                    <td><?= $row->Nom_client ?></td>
+                                    <td><?= $row->email ?></td>
+                                    <td><?= $row->telephone ?></td>
+                                    <td><?= $row->adresse ?></td>
+                                    <td><?= $row->nationalite ?></td>
+                                    <td><?= $row->gender ?></td>
                                     <td>
-									   
-                                        <a href="<?= base_url('user/edit/' . $row['ID_client']) ?>" class="btn btn-sm btn-primary">Modifier</a>
-                                        <a href="<?= base_url('user/delete/' . $row['ID_client']) ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?')" class="btn btn-sm btn-danger">Supprimer</a>
+                                        <a href="<?= base_url('user/edit/' . $row->ID_client) ?>" class="btn btn-sm btn-primary">Modifier</a>
+                                        <a href="<?= base_url('user/delete/' . $row->ID_client) ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?')" class="btn btn-sm btn-danger">Supprimer</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
                         <?php else: ?>
                             <tr>
-                                <td colspan="7" class="text-center">Aucun utilisateur trouvé</td>
+                                <td colspan="8" class="text-center">Aucun utilisateur trouvé</td>
                             </tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
-				<a href="<?= base_url('user/add/' . $row['ID_client']) ?>" class="btn btn-sm btn-primary">ajouter</a>
+                <a href="<?= base_url('user/add') ?>" class="btn btn-sm btn-primary">Ajouter</a>
             </div>
         </div>
     </div>

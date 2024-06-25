@@ -5,42 +5,36 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title text-center">Liste des locations</h5>
-                <table class="table table-bordered">
+                <table class="table">
                     <thead>
                         <tr>
-                            <th>ID Location</th>
-                            <th>matricule</th>
-                            <th>ID Client</th>
-                            <th>ID Agence</th>
-                            <th>Date début</th>
-                            <th>Date fin</th>
-                            <th>Actions</th>
+                            <th scope="col">ID Location</th>
+                            <th scope="col">Matricule</th>
+                            <th scope="col">ID Client</th>
+                            <th scope="col">ID Agence</th>
+                            <th scope="col">Date début</th>
+                            <th scope="col">Date fin</th>
+                            <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if (isset($locations) && !empty($locations)): ?>
-                            <?php foreach ($locations as $row): ?>
-                                <tr>
-                                    <td><?= $row['ID_location'] ?></td>
-                                    <td><?= $row['matricule'] ?></td>
-                                    <td><?= $row['ID_client'] ?></td>
-                                    <td><?= $row['ID_agence'] ?></td>
-                                    <td><?= $row['date_debut'] ?></td>
-                                    <td><?= $row['date_fin'] ?></td>
-                                    <td>
-                                        <a href="<?= base_url('location/edit/' . $row['ID_location']) ?>" class="btn btn-sm btn-primary">Modifier</a>
-                                        <a href="<?= base_url('location/delete/' . $row['ID_location']) ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette location ?')" class="btn btn-sm btn-danger">Supprimer</a>
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
-                        <?php else: ?>
+                        <?php foreach ($locations as $location) : ?>
                             <tr>
-                                <td colspan="7" class="text-center">Aucune location trouvée</td>
+                                <th scope="row"><?= $location['ID_location'] ?></th>
+                                <td><?= $location['matricule'] ?></td>
+                                <td><?= $location['ID_client'] ?></td>
+                                <td><?= $location['ID_agence'] ?></td>
+                                <td><?= $location['date_debut'] ?></td>
+                                <td><?= $location['date_fin'] ?></td>
+                                <td>
+                                    <a href="<?= base_url() ?>location/edit/<?= $location['ID_location'] ?>" class="btn btn-sm btn-warning">Modifier</a>
+                                    <a href="<?= base_url() ?>location/delete/<?= $location['ID_location'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette location?')">Supprimer</a>
+                                </td>
                             </tr>
-                        <?php endif; ?>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
-                <a href="<?= base_url('location/add') ?>" class="btn btn-sm btn-primary">Ajouter une location</a>
+                <a href="<?= base_url('location/add') ?>" class="btn btn-sm btn-primary">Ajouter une nouvelle location</a>
             </div>
         </div>
     </div>

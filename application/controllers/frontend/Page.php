@@ -44,6 +44,11 @@ class Page extends CI_Controller {
         $data['page_title'] = 'A propos';
         $this->load->view('frontend/about', $data);
     }
+
+	public function sign_in()
+    {
+        $this->load->view('sign_in');
+    }
 }
 
 ?>

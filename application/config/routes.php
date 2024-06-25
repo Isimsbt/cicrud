@@ -89,8 +89,10 @@ $route['translate_uri_dashes'] = FALSE;
 /********************************************************** */
 $route['index'] = 'frontend/page/index';
 $route['contact'] = 'frontend/page/contact';
-$route['login'] = 'frontend/page/espace_client';
+$route['espace_client'] = 'frontend/page/espace_client';
 $route['reservation'] = 'frontend/page/reservation';
-$route['taxi'] = 'frontend/page/listing';
+$route['listing'] = 'frontend/page/listing';
 $route['agence'] = 'frontend/page/agence';
-$route['propos'] = 'frontend/page/about;
+$route['about'] = 'frontend/page/about'; 
+$route['sign_in'] = 'frontend/page/sign_in'; 
+$route['dashboard'] = 'dashboard/index';
