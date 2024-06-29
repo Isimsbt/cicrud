@@ -1,27 +1,20 @@
 <!doctype html>
 <html lang="en">
-
-  <head>
+<head>
     <title>wanderwheels</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/aos.css">
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/style.css">
+</head>
 
   <body>
 
@@ -46,35 +39,34 @@
 
             <div class="col-3">
               <div class="site-logo">
-                <a href="index.html"><strong>wanderwheels</strong></a>
+                <a href="http://localhost/cicrud/page/index"><strong>wanderwheels</strong></a>
               </div>
             </div>
 
             <div class="col-9  text-right">
               
               <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
-              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li><a href="index.html" class="nav-link">Accuiel</a></li>
-                  <li class="active"><a href="listing.html" class="nav-link">véhicule</a></li>
-                  <li><a href="espace_client.html" class="nav-link">Espace client</a></li>
-                  <li><a href="agence.html" class="nav-link">Agence</a></li>
-                  <li><a href="reservation.html" class="nav-link">Reservation</a></li>
-                  <li><a href="about.html" class="nav-link">Apropos</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-              </nav>
+							<nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                   <ul class="site-menu main-menu js-clone-nav ml-auto">
+                   <li><a href="http://localhost/cicrud/frontend/page/index" class="nav-link">Accueil</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/listing" class="nav-link">Véhicule</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/espace_client" class="nav-link">Espace client</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/agence" class="nav-link">Agence</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/reservation" class="nav-link">Réservation</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/about" class="nav-link">À propos</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+
+
+
             </div>
 
             
           </div>
         </div>
-
       </header>
-
-      
-      <div class="hero" style="background-image: url('images/hero_1_a.jpg');">
-        
+      <div class="hero" style="background-image: url('http://localhost/cicrud/assets/images/hero_1_a.jpg');">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-10">
@@ -181,7 +173,7 @@
           <div class="row align-items-center">
             <div class="col-lg-7 text-center order-lg-2">
               <div class="img-wrap-1 mb-5">
-                <img src="images/oi.jpg" alt="Image" class="img-fluid">
+                <img src="http://localhost/cicrud/assets/images/feature_01.png" alt="Image" class="img-fluid">
               </div>
             </div>
             <div class="col-lg-4 ml-auto order-lg-1">
@@ -218,7 +210,7 @@
   
               <div class="listing d-block  align-items-stretch">
                 <div class="listing-img h-100 mr-4">
-                  <img src="images/golf.jpg" alt="Image" class="img-fluid">
+                  <img src="http://localhost/cicrud/assets/images/golf.jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="listing-contents h-100">
                   <h3>GOLF</h3>
@@ -257,7 +249,7 @@
   
               <div class="listing d-block  align-items-stretch">
                 <div class="listing-img h-100 mr-4">
-                  <img src="images/peugeot.jpg" alt="Image" class="img-fluid">
+                  <img src="http://localhost/cicrud/assets/images/peugeot.jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="listing-contents h-100">
                   <h3>peugeot</h3>
@@ -292,7 +284,7 @@
   
               <div class="listing d-block  align-items-stretch">
                 <div class="listing-img h-100 mr-4">
-                  <img src="images/mercedes.jpg" alt="Image" class="img-fluid">
+                  <img src="http://localhost/cicrud/assets/images/mercedes.jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="listing-contents h-100">
                   <h3>Mercedes</h3>
@@ -326,7 +318,7 @@
   
               <div class="listing d-block  align-items-stretch">
                 <div class="listing-img h-100 mr-4">
-                  <img src="images/skodaocta.jpg" alt="Image" class="img-fluid">
+                  <img src="http://localhost/cicrud/assets/images/skodaocta.jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="listing-contents h-100">
                   <h3>Skoda ocatavia</h3>
@@ -360,7 +352,7 @@
   
               <div class="listing d-block  align-items-stretch">
                 <div class="listing-img h-100 mr-4">
-                  <img src="images/nissan.jpg" alt="Image" class="img-fluid">
+                  <img src="http://localhost/cicrud/assets/images/nissan.jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="listing-contents h-100">
                   <h3>Nissan</h3>
@@ -395,7 +387,7 @@
   
               <div class="listing d-block  align-items-stretch">
                 <div class="listing-img h-100 mr-4">
-                  <img src="images/toyota.jpg" alt="Image" class="img-fluid">
+                  <img src="http://localhost/cicrud/assets/images/toyota.jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="listing-contents h-100">
                   <h3>toyota</h3>
@@ -418,7 +410,7 @@
                   </div>
                   <div>
                   
-                    <p><a href="#" class="btn btn-primary btn-sm">loué</a></p>
+                    <p><a href="#" class="btn btn-primary btn-sm">louer</a></p>
                   </div>
                 </div>
   
@@ -522,7 +514,7 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
+                <img src="http://localhost/cicrud/assets/images/person_1.jpg" alt="Image" class="img-fluid mr-3">
                 <div class="author-name">
                   <span class="d-block">Mike Fisher</span>
                   <span>Owner, Ford</span>
@@ -536,7 +528,7 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
+                <img src="http://localhost/cicrud/assets/images/person_2.jpg" alt="Image" class="img-fluid mr-3">
                 <div class="author-name">
                   <span class="d-block">Jean Stanley</span>
                   <span>Traveler</span>
@@ -550,7 +542,7 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
+                <img src="http://localhost/cicrud/assets/images/person_3.jpg" alt="Image" class="img-fluid mr-3">
                 <div class="author-name">
                   <span class="d-block">Katie Rose</span>
                   <span >Customer</span>
@@ -572,102 +564,101 @@
 
           </div>
           <div class="col-lg-5 text-md-right">
-            <a href="#" class="btn btn-primary btn-white">Réservez maintenant</a>
+            <a href="http://localhost/cicrud/frontend/page/reservation" class="btn btn-primary btn-white">Réservez maintenant</a>
           </div>
         </div>
       </div>
     </div>
 
       
-		<footer class="site-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3">
-						<h2 class="footer-heading mb-4">A propos</h2>
-						<p>
-							Notre site web de location de taxi touristique en Tunisie offre un service personnalisé, fiable et sécurisé pour vous permettre de découvrir les trésors cachés de la région avec confort et style. </p>
-							<ul class="list-unstyled social">
-								<li><a href="#"><span class="icon-facebook"></span></a></li>
-								<li><a href="#"><span class="icon-instagram"></span></a></li>
-								<li><a href="#"><span class="icon-twitter"></span></a></li>
-								<li><a href="#"><span class="icon-linkedin"></span></a></li>
-						</ul>
-						
-					</div>
-					<div class="col-lg-8 ml-auto">
-						<div class="row">
-							<div class="col-lg-3">
-								<h2 class="footer-heading mb-4">Quick Links</h2>
-								<ul class="list-unstyled">
-									<li><a href="#">Acceuil</a></li>
-									<li><a href="#">contact</a></li>
-									<li><a href="#">espace client</a></li>
-									<li><a href="#">reservation</a></li>
-									<li><a href="#">vehicule</a></li>
-									<li><a href="#">agences</a></li>
-									<li><a href="#">a propos</a></li>
-								</ul>
-							</div>
-							<div class="col-lg-3">
-								<h2 class="footer-heading mb-4">Resources</h2>
-								<ul class="list-unstyled">
-									<li><a href="#">Acceuil</a></li>
-									<li><a href="#">contact</a></li>
-									<li><a href="#">espace client</a></li>
-									<li><a href="#">reservation</a></li>
-									<li><a href="#">vehicule</a></li>
-									<li><a href="#">agences</a></li>
-									<li><a href="#">a propos</a></li>
-								</ul>
-							</div>
-							<div class="col-lg-3">
-								<h2 class="footer-heading mb-4">Support</h2>
-								<ul class="list-unstyled">
-									<li><a href="#">Acceuil</a></li>
-									<li><a href="#">contact</a></li>
-									<li><a href="#">espace client</a></li>
-									<li><a href="#">reservation</a></li>
-									<li><a href="#">vehicule</a></li>
-									<li><a href="#">agences</a></li>
-									<li><a href="#">a propos</a></li>
-								</ul>
-							</div>
-						 
-						</div>
-					</div>
-				</div>
-				<div class="row pt-5 mt-5 text-center">
-					<div class="col-md-12">
-						<div class="border-top pt-5">
-							<p>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-						</div>
-					</div>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h2 class="footer-heading mb-4">About Us</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 ml-auto">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Quick Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Resources</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Support</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Company</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <div class="border-top pt-5">
+                <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+              </div>
+            </div>
 
-				</div>
-			</div>
-		</footer>
+          </div>
+        </div>
+      </footer>
 
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/aos.js"></script>
-
-    <script src="js/main.js"></script>
-
+		<script src="http://localhost/cicrud/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/popper.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/bootstrap.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/owl.carousel.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.sticky.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.waypoints.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.animateNumber.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.fancybox.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.easing.1.3.js"></script>
+    <script src="http://localhost/cicrud/assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/aos.js"></script>
+    <script src="http://localhost/cicrud/assets/js/main.js"></script>
+    <script src="http://localhost/cicrud/assets/js/main.js"></script>
   </body>
 
 </html>
-

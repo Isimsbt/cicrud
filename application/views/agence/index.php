@@ -8,7 +8,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">ID_agence</th>
                             <th scope="col">Nom de l'agence</th>
                             <th scope="col">Adresse</th>
                             <th scope="col">Téléphone</th>
@@ -19,7 +19,7 @@
                     <tbody>
                         <?php foreach ($agences as $agence) : ?>
                             <tr>
-                                <th scope="row"><?= $agence['ID_agence'] ?></th>
+                                <td><?= $agence['ID_agence'] ?></td>
                                 <td><?= $agence['nom'] ?></td>
                                 <td><?= $agence['adresse'] ?></td>
                                 <td><?= $agence['telephone'] ?></td>
@@ -32,9 +32,11 @@
                         <?php endforeach; ?>
                     </tbody>
                 </table>
-				<a href="<?= base_url('agence/add') ?>" class="btn btn-sm btn-primary">Add New agence</a>
+                <a href="<?= base_url('agence/add') ?>" class="btn btn-sm btn-primary">Ajouter une nouvelle agence</a>
+				<a href="<?php echo site_url('dashboard'); ?>" class="btn btn-secondary">Back to Dashboard</a>
             </div>
         </div>
     </div>
 </div>
+
 <?php $this->load->view('includes/footer'); ?>

@@ -24,7 +24,8 @@ class User extends CI_Controller
                 'adresse' => $this->input->post('adresse'),
                 'telephone' => $this->input->post('telephone'),
                 'nationalite' => $this->input->post('nationalite'),
-                'gender' => $this->input->post('gender')
+                'gender' => $this->input->post('gender'),
+				'gender' => $this->input->post('password'),
             );
 
             $this->user_model->insertUser($data);
@@ -40,6 +41,7 @@ class User extends CI_Controller
         $data['ID_client'] = $ID_client;
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			$this->form_validation->set_rules('ID_client', 'ID_client', 'required');
             $this->form_validation->set_rules('Nom_client', 'Nom', 'required');
             $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
             $this->form_validation->set_rules('adresse', 'Adresse', 'required');
@@ -49,6 +51,7 @@ class User extends CI_Controller
 
             if ($this->form_validation->run() == TRUE) {
                 $dataToUpdate = array(
+					'ID_client' => $this->input->post('ID_client'),
                     'Nom_client' => $this->input->post('Nom_client'),
                     'email' => $this->input->post('email'),
                     'adresse' => $this->input->post('adresse'),

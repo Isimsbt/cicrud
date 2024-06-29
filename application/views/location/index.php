@@ -35,6 +35,7 @@
                     </tbody>
                 </table>
                 <a href="<?= base_url('location/add') ?>" class="btn btn-sm btn-primary">Ajouter une nouvelle location</a>
+				<a href="<?php echo site_url('dashboard'); ?>" class="btn btn-secondary">Back to Dashboard</a>
             </div>
         </div>
     </div>

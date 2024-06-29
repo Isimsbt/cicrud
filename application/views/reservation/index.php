@@ -37,6 +37,7 @@
                     </tbody>
                 </table>
                 <a href="<?= base_url('reservation/add') ?>" class="btn btn-sm btn-primary">Ajouter une réservation</a>
+				<a href="<?php echo site_url('dashboard'); ?>" class="btn btn-secondary">Back to Dashboard</a>
             </div>
         </div>
     </div>

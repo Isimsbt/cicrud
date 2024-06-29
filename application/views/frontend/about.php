@@ -1,27 +1,21 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-   
+<head>
+    <title>wanderwheels</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/aos.css">
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
+    <link rel="stylesheet" href="http://localhost/cicrud/assets/css/style.css">
+</head>
 
   <body>
 
@@ -54,28 +48,24 @@
               
               <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
 
-              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li><a href="index.html" class="nav-link">Accuiel</a></li>
-                  <li class="active"><a href="listing.html" class="nav-link">véhicule</a></li>
-                  <li><a href="espace_client.html" class="nav-link">Espace client</a></li>
-                  <li><a href="agence.html" class="nav-link">Agence</a></li>
-                  <li><a href="reservation.html" class="nav-link">Reservation</a></li>
-                  <li><a href="about.html" class="nav-link">Apropos</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
+							<nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                   <ul class="site-menu main-menu js-clone-nav ml-auto">
+                   <li><a href="http://localhost/cicrud/frontend/page/index" class="nav-link">Accueil</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/listing" class="nav-link">Véhicule</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/espace_client" class="nav-link">Espace client</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/agence" class="nav-link">Agence</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/reservation" class="nav-link">Réservation</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/about" class="nav-link">À propos</a></li>
+                   <li><a href="http://localhost/cicrud/frontend/page/contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>     </div>
 
             
           </div>
         </div>
 
       </header>
-
-      
-      <div class="hero inner-page" style="background-image: url('images/hero_1_a.jpg');">
-        
+			<div class="hero inner-page" style="background-image: url('http://localhost/cicrud/assets/images/hero_1_a.jpg');">
         <div class="container">
           <div class="row align-items-end ">
             <div class="col-lg-5">
@@ -248,19 +238,21 @@
 
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/aos.js"></script>
+		
+	
+    <script src="http://localhost/cicrud/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/popper.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/bootstrap.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/owl.carousel.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.sticky.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.waypoints.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.animateNumber.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.fancybox.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/jquery.easing.1.3.js"></script>
+    <script src="http://localhost/cicrud/assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="http://localhost/cicrud/assets/js/aos.js"></script>
+    <script src="http://localhost/cicrud/assets/js/main.js"></script>
 
-    <script src="js/main.js"></script>
 
   </body>
 

@@ -16,6 +16,7 @@
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1 class="my-4">Dashboard</h1>
         <table class="table table-bordered">
@@ -29,36 +30,39 @@
                 <tr>
                     <td>User</td>
                     <td>
-                        <a href="<?php echo site_url('user/index'); ?>" class="btn btn-list btn-block mb-2">User List</a>
-                        <a href="<?php echo site_url('user/add'); ?>" class="btn btn-add btn-block mb-2">Add User</a>
+					<a href="<?php echo site_url('user/index'); ?>" class="btn btn-list btn-block mb-2">Liste des utilisateurs</a>
+                    <a href="<?php echo site_url('user/add'); ?>" class="btn btn-danger btn-block mb-2">Ajouter utilisateur</a>
+
                     </td>
                 </tr>
                 <tr>
                     <td>Agence</td>
                     <td>
-                        <a href="<?php echo site_url('agence/index'); ?>" class="btn btn-list btn-block mb-2">Agence List</a>
-                        <a href="<?php echo site_url('agence/add'); ?>" class="btn btn-add btn-block mb-2">Add Agence</a>
+                        <a href="<?php echo site_url('agence/index'); ?>" class="btn btn-list btn-block mb-2">liste des agences</a>
+						<a href="<?php echo site_url('agence/add'); ?>" class="btn btn-danger btn-block mb-2">Ajouter agence</a>
                     </td>
                 </tr>
                 <tr>
                     <td>Taxi</td>
                     <td>
-                        <a href="<?php echo site_url('taxi'); ?>" class="btn btn-list btn-block mb-2">Taxi List</a>
-                        <a href="<?php echo site_url('taxi/add'); ?>" class="btn btn-add btn-block mb-2">Add Taxi</a>
+                        <a href="<?php echo site_url('taxi'); ?>" class="btn btn-list btn-block mb-2">liste taxi</a>
+                        <a href="<?php echo site_url('taxi/add'); ?>" class="btn btn-danger btn-block mb-2">Ajouter taxi</a>
                     </td>
                 </tr>
                 <tr>
                     <td>Reservation</td>
                     <td>
-                        <a href="<?php echo site_url('reservation/index'); ?>" class="btn btn-list btn-block mb-2">Reservation List</a>
-                        <a href="<?php echo site_url('reservation/add'); ?>" class="btn btn-add btn-block mb-2">Add Reservation</a>
+                        <a href="<?php echo site_url('reservation/index'); ?>" class="btn btn-list btn-block mb-2">
+
+						                                                                                          Liste Reservation </a>
+						<a href="<?php echo site_url('reservation/add'); ?>" class="btn btn-danger btn-block mb-2">Ajouter reservation</a>
                     </td>
                 </tr>
                 <tr>
                     <td>Location</td>
                     <td>
-                        <a href="<?php echo site_url('location/index'); ?>" class="btn btn-list btn-block mb-2">Location List</a>
-                        <a href="<?php echo site_url('location/add'); ?>" class="btn btn-add btn-block mb-2">Add Location</a>
+                        <a href="<?php echo site_url('location/index'); ?>" class="btn btn-list btn-block mb-2">Liste des locations</a>
+                        <a href="<?php echo site_url('location/add'); ?>" class="btn btn-danger btn-block mb-2">ajouter location</a>
                     </td>
                 </tr>
             </tbody>

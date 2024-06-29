@@ -25,7 +25,7 @@ class Agence extends CI_Controller
             );
             
             $this->agence_model->insertAgence($data);
-            redirect('agence');
+            redirect('agence/index');  // Redirige vers la page index après ajout
         } else {
             $this->load->view('agence/add_agence');
         }

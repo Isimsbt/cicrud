@@ -1,32 +1,31 @@
 <?php
-class Agence_model extends CI_Model
-{
-    public function getAllAgences()
-    {
-        $query = $this->db->get('agence');
+class Agence_model extends CI_Model {
+
+    public function __construct() {
+        $this->load->database();
+    }
+
+    public function getAllAgences() {
+        $query = $this->db->select('ID_agence, nom, adresse, telephone, email')
+                          ->get('agence');
         return $query->result_array();
     }
 
-    public function getAgence($id)
-    {
-        $this->db->where('ID_agence', $id);
-        $query = $this->db->get('agence');
-        return $query->row_array();
-    }
-
-    public function insertAgence($data)
-    {
+    public function insertAgence($data) {
         return $this->db->insert('agence', $data);
     }
 
-    public function updateAgence($data, $id)
-    {
+    public function getAgence($id) {
+        $query = $this->db->get_where('agence', array('ID_agence' => $id));
+        return $query->row_array();
+    }
+
+    public function updateAgence($data, $id) {
         $this->db->where('ID_agence', $id);
         return $this->db->update('agence', $data);
     }
 
-    public function deleteAgence($id)
-    {
+    public function deleteAgence($id) {
         $this->db->where('ID_agence', $id);
         return $this->db->delete('agence');
     }

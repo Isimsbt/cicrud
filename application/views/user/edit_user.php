@@ -3,9 +3,9 @@
 <div class="container">
     <h2>Modifier un utilisateur</h2>
     <form action="<?= base_url('user/edit/' . $client->ID_client) ?>" method="post">
-	<div class="form-group">
+        <div class="form-group">
             <label for="ID_client">ID_client</label>
-            <input type="text" class="form-control" name="ID_client" value="<?= $ID_clientt ?>" required>
+            <input type="text" class="form-control" name="ID_client" value="<?= $client->ID_client ?>" required>
         </div>
         <div class="form-group">
             <label for="Nom_client">Nom</label>

@@ -26,7 +26,7 @@ class Reservation extends CI_Controller
             );
             
             $this->reservation_model->insertReservation($data);
-            redirect('reservation');
+            redirect('reservation');  // Redirige vers la page index des réservations après ajout
         } else {
             $this->load->view('reservation/add_reservation');
         }

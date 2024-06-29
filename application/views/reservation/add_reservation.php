@@ -14,7 +14,6 @@
                         <label for="ID_taxi" class="form-label">Taxi ID</label>
                         <input type="text" name="ID_taxi" placeholder="Taxi ID" class="form-control" id="ID_taxi">
                     </div>
-                  
                     <div class="mb-3">
                         <label for="date_debut" class="form-label">Start Date</label>
                         <input type="date" name="date_debut" class="form-control" id="date_debut">
@@ -31,11 +30,20 @@
                             <option value="annulé">Annulé</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Add</button>
+					<button type="button" id="addButton" class="btn btn-sm btn-primary">Ajouter</button>
+<script>
+document.getElementById('addButton').addEventListener('click', function() {
+    // Redirect to the reservation/index page
+    window.location.href = "http://localhost/cicrud/reservation/index";
+});
+</script>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+
+
 
 <?php $this->load->view('includes/footer'); ?>

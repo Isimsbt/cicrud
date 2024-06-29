@@ -2,7 +2,6 @@
 
 class Page extends CI_Controller {
 
-   
     public function index()
     {
         $data['page_title'] = 'Accueil';
@@ -15,7 +14,7 @@ class Page extends CI_Controller {
         $this->load->view('frontend/contact', $data);
     }
 
-    public function login()
+    public function espace_client()
     {
         $data['page_title'] = 'Espace client';
         $this->load->view('frontend/espace_client', $data);
@@ -27,7 +26,7 @@ class Page extends CI_Controller {
         $this->load->view('frontend/reservation', $data);
     }
 
-    public function taxi()
+    public function listing()
     {
         $data['page_title'] = 'Taxi';
         $this->load->view('frontend/listing', $data);
@@ -39,16 +38,28 @@ class Page extends CI_Controller {
         $this->load->view('frontend/agence', $data);
     }
 
-    public function propos()
+    public function about()
     {
         $data['page_title'] = 'A propos';
         $this->load->view('frontend/about', $data);
     }
 
-	public function sign_in()
+    public function sign_in()
     {
-        $this->load->view('sign_in');
+        $data['page_title'] = 'Connexion';
+        $this->load->view('frontend/sign_in', $data);
+    }
+
+    public function reset()
+    {
+        $data['page_title'] = 'Réinitialiser le mot de passe';
+        $this->load->view('frontend/reset', $data);
+    }
+
+    public function password()
+    {
+        $data['page_title'] = 'Changer le mot de passe';
+        $this->load->view('frontend/password', $data);
     }
 }
-
 ?>

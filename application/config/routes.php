@@ -63,7 +63,7 @@ $route['taxi/add'] = 'taxi/add'; // Afficher le formulaire d'ajout d'un taxi
 $route['taxi/edit/(:any)'] = 'taxi/edit/$1'; // Afficher le formulaire d'édition d'un taxi
 $route['taxi/delete/(:any)'] = 'taxi/delete/$1'; 
 /**************ROUTES DE PAGES AGENCES************* */
-$route['agence/index'] = 'agence/index';
+$route['agence'] = 'agence/index';
 $route['agence/add'] = 'agence/add';
 $route['agence/edit/(:num)'] = 'agence/edit/$1';
 $route['agence/delete/(:num)'] = 'agence/delete/$1';
@@ -84,15 +84,38 @@ $route['default_controller'] = 'frontend/page/index';
 $route['frontend'] = 'frontend/page/index';
 
 
-$route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+
 /********************************************************** */
-$route['index'] = 'frontend/page/index';
-$route['contact'] = 'frontend/page/contact';
-$route['espace_client'] = 'frontend/page/espace_client';
-$route['reservation'] = 'frontend/page/reservation';
-$route['listing'] = 'frontend/page/listing';
-$route['agence'] = 'frontend/page/agence';
-$route['about'] = 'frontend/page/about'; 
-$route['sign_in'] = 'frontend/page/sign_in'; 
+$route['index'] = 'page/index';
+$route['contact'] = 'page/contact';
+$route['espace_client'] = 'page/login'; // Correction ici : la méthode s'appelle login dans votre contrôleur
+$route['reservation'] = 'page/reservation';
+$route['listing'] = 'page/taxi'; // Correction ici : la méthode s'appelle taxi dans votre contrôleur
+$route['agence'] = 'page/agence';
+$route['about'] = 'page/propos'; // Correction ici : la méthode s'appelle propos dans votre contrôleur
+$route['sign_in'] = 'page/sign_in';
+$route['password'] = 'page/password';
+
 $route['dashboard'] = 'dashboard/index';
+
+/******************************************************** */
+// application/config/routes.php
+$route['default_controller'] = 'form';
+$route['form/submit'] ='form/submit';
+
+$route['auth/forgot_password'] = 'auth/forgot_password';
+$route['auth/reset_password/(:any)'] = 'auth/reset_password/$1';
+$route['auth/update_password'] = 'auth/update_password';
+
+$route['form'] = 'form/index';
+
+/*
+$route['reservation'] = 'reservation/index';
+$route['reservation/submit'] = 'reservation/submit';
+$route['reservation/success'] = 'reservation/success';
+$route['reservation/get_taxis'] = 'reservation/get_taxis';*/
+$route['reservation'] = 'reservation/index';
+$route['reservation/get_taxis'] = 'reservation/get_taxis';
+$route['reservation/submit'] = 'reservation/submit';
+$route['reservation/success'] = 'reservation/success';
+

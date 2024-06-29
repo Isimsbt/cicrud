@@ -30,6 +30,7 @@
                 </tbody>
             </table>
             <a href="<?= base_url('taxi/add') ?>" class="btn btn-success">Ajouter un taxi</a>
+			<a href="<?php echo site_url('dashboard'); ?>" class="btn btn-secondary">Back to Dashboard</a>
         </div>
     </div>
 </div>
