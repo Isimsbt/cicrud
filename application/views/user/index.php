@@ -15,7 +15,7 @@
                             <th>Adresse</th>
                             <th>Nationalité</th>
                             <th>Genre</th>
-							<th>mot de passe</th>
+                            <th>Mot de passe</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -30,22 +30,26 @@
                                     <td><?= $row->adresse ?></td>
                                     <td><?= $row->nationalite ?></td>
                                     <td><?= $row->gender ?></td>
-									<td><?= $row->password ?></td>
+                                    <td><?= $row->password ?></td>
                                     <td>
-                                        <a href="<?= base_url('user/edit/' . $row->ID_client) ?>" class="btn btn-sm btn-primary">Modifier</a>
-                                        <a href="<?= base_url('user/delete/' . $row->ID_client) ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?')" class="btn btn-sm btn-danger">Supprimer</a>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <a href="<?= base_url('user/edit/' . $row->ID_client) ?>" class="btn btn-sm btn-primary">Modifier</a>
+                                            <a href="<?= base_url('user/delete/' . $row->ID_client) ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?')" class="btn btn-sm btn-danger">Supprimer</a>
+                                        </div>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
                         <?php else: ?>
                             <tr>
-                                <td colspan="8" class="text-center">Aucun utilisateur trouvé</td>
+                                <td colspan="9" class="text-center">Aucun utilisateur trouvé</td>
                             </tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
-                <a href="<?= base_url('user/add') ?>" class="btn btn-sm btn-primary">Ajouter</a>
-				<a href="<?php echo site_url('dashboard'); ?>" class="btn btn-secondary">Back to Dashboard</a>
+                <div class="d-flex justify-content-between">
+                    <a href="<?= base_url('user/add') ?>" class="btn btn-sm btn-primary">Ajouter</a>
+                    <a href="<?php echo site_url('dashboard'); ?>" class="btn btn-secondary">Back to Dashboard</a>
+                </div>
             </div>
         </div>
     </div>

@@ -61,5 +61,24 @@ class Page extends CI_Controller {
         $data['page_title'] = 'Changer le mot de passe';
         $this->load->view('frontend/password', $data);
     }
+    
+    public function dashboard()
+    {
+        $data['page_title'] = 'Dashboard'; // Définir le titre de la page
+        $this->load->view('frontend/dashboard', $data); // Charger la vue
+    }
+
+    public function vehicule()
+    {
+        $data['page_title'] = 'Vehicule';
+        $this->load->view('frontend/vehicule', $data);
+    }
+
+    public function zaboun()
+    {
+        $data['page_title'] = 'Zaboun';
+        $this->load->view('frontend/zaboun', $data);
+    }
+
 }
 ?>

@@ -12,6 +12,7 @@ class Taxi extends CI_Controller
     {
         $data['taxis'] = $this->taxi_model->getAllTaxis();
         $this->load->view('taxi/index', $data);
+		
     }
 
     public function add()

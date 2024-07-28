@@ -58,21 +58,16 @@ $route['user/add'] = 'user/add';
 $route['user/edit/(:num)'] = 'user/edit/$1';
 $route['user/delete/(:num)'] = 'user/delete/$1';
 /**************ROUTES DE PAGES TAXIS************* */
-$route['taxi'] = 'taxi/index'; // Afficher la liste des taxis
-$route['taxi/add'] = 'taxi/add'; // Afficher le formulaire d'ajout d'un taxi
-$route['taxi/edit/(:any)'] = 'taxi/edit/$1'; // Afficher le formulaire d'édition d'un taxi
+$route['taxi'] = 'taxi/index'; 
+$route['taxi/add'] = 'taxi/add'; 
+$route['taxi/edit/(:any)'] = 'taxi/edit/$1'; 
 $route['taxi/delete/(:any)'] = 'taxi/delete/$1'; 
 /**************ROUTES DE PAGES AGENCES************* */
 $route['agence'] = 'agence/index';
 $route['agence/add'] = 'agence/add';
 $route['agence/edit/(:num)'] = 'agence/edit/$1';
 $route['agence/delete/(:num)'] = 'agence/delete/$1';
-/**************ROUTES DE PAGES PAIMENT************* */
-$route['paiement'] = 'paiement/index';
-$route['paiement/view/(:num)'] = 'paiement/view/$1';
-$route['paiement/create'] = 'paiement/create';
-$route['paiement/edit/(:num)'] = 'paiement/edit/$1';
-$route['paiement/delete/(:num)'] = 'paiement/delete/$1';
+
 /**************ROUTES DE PAGES RESERVATION************* */
 $route['reservation/index'] = 'reservation/index';
 $route['reservation/add'] = 'reservation/add';
@@ -88,34 +83,48 @@ $route['frontend'] = 'frontend/page/index';
 /********************************************************** */
 $route['index'] = 'page/index';
 $route['contact'] = 'page/contact';
-$route['espace_client'] = 'page/login'; // Correction ici : la méthode s'appelle login dans votre contrôleur
+$route['espace_client'] = 'page/login';
 $route['reservation'] = 'page/reservation';
-$route['listing'] = 'page/taxi'; // Correction ici : la méthode s'appelle taxi dans votre contrôleur
+$route['listing'] = 'page/taxi';
 $route['agence'] = 'page/agence';
-$route['about'] = 'page/propos'; // Correction ici : la méthode s'appelle propos dans votre contrôleur
+$route['about'] = 'page/propos'; 
 $route['sign_in'] = 'page/sign_in';
 $route['password'] = 'page/password';
 
 $route['dashboard'] = 'dashboard/index';
 
-/******************************************************** */
+/******************************************************** 
+$route['dashboard'] = 'dashboard/index';*/
 // application/config/routes.php
 $route['default_controller'] = 'form';
 $route['form/submit'] ='form/submit';
-
 $route['auth/forgot_password'] = 'auth/forgot_password';
 $route['auth/reset_password/(:any)'] = 'auth/reset_password/$1';
 $route['auth/update_password'] = 'auth/update_password';
-
 $route['form'] = 'form/index';
-
-/*
-$route['reservation'] = 'reservation/index';
-$route['reservation/submit'] = 'reservation/submit';
-$route['reservation/success'] = 'reservation/success';
-$route['reservation/get_taxis'] = 'reservation/get_taxis';*/
 $route['reservation'] = 'reservation/index';
 $route['reservation/get_taxis'] = 'reservation/get_taxis';
 $route['reservation/submit'] = 'reservation/submit';
 $route['reservation/success'] = 'reservation/success';
+$route['dashboard'] = 'frontend/page/dashboard';
+$route['vehicule'] = 'frontend/page/vehicule';
+$route['zaboun'] = 'frontend/page/zaboun';
+
+$route['backend/user'] = 'user/index';
+$route['backend/user/add'] = 'user/add';
+$route['backend/user/edit/(:num)'] = 'user/edit/$1';
+$route['backend/user/delete/(:num)'] = 'user/delete/$1';
+/******************************dashboard************************** */
+
+$route['contact'] = 'frontend/page/contact';
+$route['login'] = 'frontend/page/espace_client';
+$route['reservation'] = 'frontend/page/reservation';
+$route['taxi'] = 'frontend/page/vehicule';
+$route['agence'] = 'frontend/page/agence';
+$route['propos'] = 'frontend/page/propos';
+$route['dashboard'] = 'frontend/page/dashboard';
+$route['customers'] = 'frontend/page/customers';
+
+
+
 
