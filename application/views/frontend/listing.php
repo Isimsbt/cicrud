@@ -43,7 +43,7 @@
 
             <div class="col-3">
               <div class="site-logo">
-                <a href="index.html"><strong>CarRental</strong></a>
+                <a href="index.html"><strong>wanderwheels</strong></a>
               </div>
             </div>
 

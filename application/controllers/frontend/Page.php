@@ -79,6 +79,12 @@ class Page extends CI_Controller {
         $data['page_title'] = 'Zaboun';
         $this->load->view('frontend/zaboun', $data);
     }
+	public function transfert()
+    {
+        $data['page_title'] = 'transfert';
+        $this->load->view('frontend/transfert', $data);
+    }
+
 
 }
 ?>

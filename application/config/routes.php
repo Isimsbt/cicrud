@@ -80,7 +80,7 @@ $route['frontend'] = 'frontend/page/index';
 
 
 
-/********************************************************** */
+/********************************PAGE:************************** */
 $route['index'] = 'page/index';
 $route['contact'] = 'page/contact';
 $route['espace_client'] = 'page/login';
@@ -93,9 +93,9 @@ $route['password'] = 'page/password';
 
 $route['dashboard'] = 'dashboard/index';
 
-/******************************************************** 
-$route['dashboard'] = 'dashboard/index';*/
-// application/config/routes.php
+$route['transfert'] = 'page/transfert';
+/*********************************************************/
+
 $route['default_controller'] = 'form';
 $route['form/submit'] ='form/submit';
 $route['auth/forgot_password'] = 'auth/forgot_password';
@@ -122,8 +122,9 @@ $route['reservation'] = 'frontend/page/reservation';
 $route['taxi'] = 'frontend/page/vehicule';
 $route['agence'] = 'frontend/page/agence';
 $route['propos'] = 'frontend/page/propos';
-$route['dashboard'] = 'frontend/page/dashboard';
+$route['dashboard'] = 'frontend/page/dashboard'; 
 $route['customers'] = 'frontend/page/customers';
+
 
 
 
